@@ -1,4 +1,4 @@
-ackage com.example.bancodados;
+package com.example.bancodados;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,3 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 idade = cursor.getInt(indiceIDADE);
                 cursor.moveToNext();
             }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
